@@ -1,0 +1,58 @@
+##Stream API
+	- It is predefine interface present in java.util.stream.
+	- Introduced in JDK1.8
+	- Used to perform bulk operation on Collection like manipulation,sorting,searching,counting,
+		filter,etc.
+
+	- It has methods like filter(),sorted(),sorted(Comparator c), min(),max(), and many more.
+------------------------------------------------------------------------------------------------
+	#)	stream() :- 
+		- It is default method in collection interface.
+		- It will help to convert collection to stream type of object, so we can apply stream 
+			method on collection.
+		- 		default Stream<T> stream();
+		
+		
+	#)	filter() :- 
+		- It is abstract method in stream interface.
+		- It will take predicate as argument.
+		- It will help to perform boolean filter operation on collection object.
+		- 		Stream<T> filter(Predicate p);
+		
+	#) map() :
+		- It is abstract method present inside a stream interface.
+		- It will take function as argument.
+		- If we want to any manipulation operation or other than boolean operation then we go 
+			for map() method.
+		- 		<R> Stream<R> map(Function<? super T, ? extends R> mapper);
+		
+	#)	collect(Collector collector) :- 
+		- It is abstract method in stream interface.
+		- It will help to store or collect the elements after the operation and convert it 
+			stream to collection object.
+		- 		<R, A> R collect(Collector<? super T, A, R> collector);
+	
+	#)	Collectors :
+		- It is a predefined final class present in java.util.stream
+		- It having static methods like toList(), toMap(), toSet() and many more.
+		
+		#) toList :	
+			- It is static method present inside collectors class.
+			- It will convert stream object to list and return collector interface object.
+		
+		
+		
+	#)	Collector :
+		- It is predefined interface present in java.util.stream
+				
+		
+		
+	#)	forEach() :
+		- It is abstract method present inside stream interface.
+		- It will take consumer as argument.
+		- Once we perform operation on collection object by using stream api , directly i want 
+			to print element on console then we go for forEach() method.
+		
+		
+		
+Non-terminal method and Terminal method

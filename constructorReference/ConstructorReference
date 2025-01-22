@@ -1,0 +1,13 @@
+Constructor Reference
+
+	When abstract method of functional interfaces return type is non-primitive data type then we will go for constructor reference
+	In constructor reference we are not worried about no of arguments and not worried about object creation so that instead of going individual class implementation or lambda expression implementation it is bettor choice to go for contructor reference
+			
+			Syntax=  ClassName::new;
+			
+	To hold constructor reference we need functional interface.
+	
+	In constructor reference, which constructor to call is totally depend on abstract method of functional interface.
+		
+	When we have more than 1 constructor then which will constructor will be used by constructor reference
+		Whenever we have more than 1 constructor in class then which constructor is to use is totally depends on number of arguments of functional interfaces abstract method.

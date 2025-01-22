@@ -1,0 +1,55 @@
+PredefinedFunctional Interface 
+It is included in JDK 1.8
+		Whenever we want to perform common operation like CRUD, sorting, searching addition, 
+	subtraction, multiplication, division and boolean type of operation we explicitly create 
+	a function interface but these operations are common in day to day programmer life Instead 
+	of creating our own functional interface to perform common operation we are going to take 
+	help of predefined functional interface those are predicate, function, consumer, 
+	supplier.....,etc
+	
+		The advantage of predefined functional interface is reducing the development time and 
+	make code as more readable.
+	
+------------------------------------------------------------------------------------------------
+	
+	1] Predicate	==>>
+		- IT is a predefined functional interface.
+		- Present in java.util package.
+		- abstract method is : public abstract boolean test(T t)
+		- Here T indicates type of parameter or generic parameters we can use in this method.
+		- JDK 1.8
+		- We use this interface whenever we want to perform  boolean operation.
+		
+		T stands for Type of data. We can pass any type data type premitive,
+			non-primitive(class names also)
+				
+------------------------------------------------------------------------------------------------
+	
+	2] Function	==>>
+		- It is predefined functional interface introduced in JDK 1.8 
+		- It is present in java.util.function package
+		- abstract method is : public abstract R apply(T t)
+		- We use this interface whenever we want to perform some operation on only one variable.
+		
+		R stands for Return type of 'apply()' method and T stands for type of data.
+		
+------------------------------------------------------------------------------------------------
+	
+	3] Consumer	==>>
+		- It is predefined functional interface introduced in JDK 1.8 
+		- It is present in java.util.function package
+		- abstract method is : public abstract void accept(T t)
+		- We use this interface whenever we want to display something on console.
+		
+		T stands for type of data.
+		
+		
+-------------------------------------------------------------------------------------------------
+
+	forEach() : 
+			  - it is predefined default method present in iterable interface.
+			  - It will take consumer as argument.
+			  - 	default void forEach(Consumer c) 
+
+
+		

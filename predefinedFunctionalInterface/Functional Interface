@@ -1,0 +1,11 @@
+##	Functional Interface
+	-The interface which contains only one abstract method is called as function interface.
+
+	-It is introduced in JDK 1.8
+
+	-In functional interface we have only one abstract
+ 				But we can also have object class methods as abstract method because Object class 
+ 		is parent of all classes and interfaces	so we can use hashCode() ,toString() ,
+ 		equals(Object o) these methods as abstract method because these are not native and final
+		other methods are either native or final so we can't use that methods declaration in
+		functional interface

@@ -1,0 +1,45 @@
+When we have to go for Lambda Expression and When we have to go for Method Reference
+
+	Lambda Expression	:	When we have to provide new implementation or the implementation
+							 is not present in any class or  we have to provide new 
+							 implementation to abstract method of interface then we go for 
+							 lambda expression
+	
+	Method Reference	:	When we have already implemented method present in class and 
+							we have to provide same implementation to abstract method of 
+							interface then we go for method reference
+
+---------------------------------------------------------------------------------	
+
+	Lambda Expression Example ======>>
+	
+		interface I1{
+		void greet();
+		}
+		
+		class I1Driver{
+		public static void main(String args[]){
+			I1 i=()->System.out.println("Hi");
+			i.greet();
+		}
+		
+---------------------------------------------------------------------------------	
+
+	Method Reference Example =====>>
+	
+		interface I2{
+		void greet();
+		}
+		
+		class I2Driver{
+		void hii(){
+			System.out.println("Hi");
+		}
+		public static void main(String args[]){
+			I2 i= new I2Driver::hii;
+			i.greet();
+		}
+		
+---------------------------------------------------------------------------------
+Note: For more examples check out methodReference, constructorReference these packages.
+
